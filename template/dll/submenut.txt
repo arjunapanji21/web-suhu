@@ -1,5 +1,0 @@
-<ul class='treeview-menu'>
-							<li><a href="index.php?module=dashboard">
-                                <i class="fa fa-laptop"></i> <span>TAMBAH MAHASISWA</span>
-                            </a></li>
-							</ul>
