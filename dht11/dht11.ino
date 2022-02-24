@@ -6,7 +6,7 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 String ruangan = "Server";
-String ip_server = "10.102.5.128";
+String ip_server = "10.102.6.36";
 
 const char *ssid = "IPC JAMBI";  //Nama Wifi
 const char *password = ""; // pass wifi
@@ -14,9 +14,8 @@ const char *password = ""; // pass wifi
 float h, t, old_h, old_t, suhu, kelembaban;
 
 void setup() {
-  delay(1000);
   pinMode(DHTPIN, INPUT);
-  Serial.begin(115200);
+  Serial.begin(9600);
   WiFi.mode(WIFI_OFF);
   delay(1000);
   WiFi.mode(WIFI_STA);
@@ -37,6 +36,7 @@ void setup() {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());  //IP address assigned to your ESP
   dht.begin();
+  delay(1000);
   read_dht();
   kirim_data();
 }
@@ -81,7 +81,7 @@ void kirim_data() {
   String postData = (String)"ruangan=" + ruangan + "&suhu=" + suhu + "&kelembaban=" + kelembaban;
 
   HTTPClient http;
-  http.begin("http://" + ip_server + "/suhu/api.php");
+  http.begin("http://" + ip_server + "/web-suhu/api.php");
   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
   auto httpCode = http.POST(postData);

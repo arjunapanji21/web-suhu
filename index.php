@@ -10,6 +10,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="3600" >
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AdminLTE 3 | Dashboard 2</title>
 
@@ -260,7 +261,7 @@
               />
             </div>
             <div class="info">
-              <a href="#" class="d-block">Alexander Pierce</a>
+              <a href="#" class="d-block">Administrator</a>
             </div>
           </div>
 
@@ -994,10 +995,11 @@
                   ></span>
 
                   <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
+                    <span class="info-box-text" style="text-align:center;">Ruang <?= $server['ruangan'];?></span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
                     </span>
                   </div>
                   <!-- /.info-box-content -->
@@ -1005,69 +1007,6 @@
                 <!-- /.info-box -->
               </div>
               <!-- /.col -->
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-danger elevation-1"
-                    ><i class="fas fa-thumbs-up"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-              <!-- /.col -->
-
-              <!-- fix for small devices only -->
-              <div class="clearfix hidden-md-up"></div>
-
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-success elevation-1"
-                    ><i class="fas fa-shopping-cart"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-              <!-- /.col -->
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-warning elevation-1"
-                    ><i class="fas fa-users"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-
-            <!-- Info boxes -->
-            <div class="row">
               <div class="col-12 col-sm-6 col-md-3">
                 <div class="info-box">
                   <span class="info-box-icon bg-info elevation-1"
@@ -1075,10 +1014,11 @@
                   ></span>
 
                   <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
+                    <span class="info-box-text" style="text-align:center;">Ruang HPI</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
                     </span>
                   </div>
                   <!-- /.info-box-content -->
@@ -1087,38 +1027,17 @@
               </div>
               <!-- /.col -->
               <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-danger elevation-1"
-                    ><i class="fas fa-thumbs-up"></i
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
                   ></span>
 
                   <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
-                    </span>
-                  </div>
-                  <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-              </div>
-              <!-- /.col -->
-
-              <!-- fix for small devices only -->
-              <div class="clearfix hidden-md-up"></div>
-
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-success elevation-1"
-                    ><i class="fas fa-shopping-cart"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
+                    <span class="info-box-text" style="text-align:center;">Ruang Teknik</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
                     </span>
                   </div>
                   <!-- /.info-box-content -->
@@ -1127,16 +1046,17 @@
               </div>
               <!-- /.col -->
               <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-warning elevation-1"
-                    ><i class="fas fa-users"></i
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
                   ></span>
 
                   <div class="info-box-content">
-                    <span class="info-box-text">Ruang Server</span>
-                    <span class="info-box-number" style="font-size:24px;text-align:right;">
-                      <?php echo $server['suhu'];?>
-                      <small>&#8451;</small>
+                    <span class="info-box-text" style="text-align:center;">Ruang GM</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
                     </span>
                   </div>
                   <!-- /.info-box-content -->
@@ -1144,6 +1064,83 @@
                 <!-- /.info-box -->
               </div>
               <!-- /.col -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
+                  ></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text" style="text-align:center;">Ruang Rapat</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
+                    </span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
+                  ></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text" style="text-align:center;">Ruang Rendal</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
+                    </span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
+                  ></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text" style="text-align:center;">Ruang Keuangan</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
+                    </span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              <div class="col-12 col-sm-6 col-md-3">
+                <div class="info-box">
+                  <span class="info-box-icon bg-info elevation-1"
+                    ><i class="fas fa-cog"></i
+                  ></span>
+
+                  <div class="info-box-content">
+                    <span class="info-box-text" style="text-align:center;">Ruang SDM</span>
+                    <span class="info-box-number" style="font-size:24px;text-align:center;">
+                      <?= $server['suhu']; ?> <small>&#8451;</small> <br> 
+                      <?= $server['kelembaban'];?> <small>%</small> <br>
+                      <small style="font-size:16px;"><?= $server['waktu'] ?></small>
+                    </span>
+                  </div>
+                  <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+              </div>
+              <!-- /.col -->
+              
             </div>
             <!-- /.row -->
 

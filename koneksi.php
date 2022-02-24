@@ -2,9 +2,9 @@
 
 
 $servername = "localhost";
-$username = "arjuna";
-$password = "arjuna";
-$database = "db_suhu";
+$username = "root";
+$password = "";
+$database = "sensor";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
